@@ -19,7 +19,6 @@ This project is a mockup website for Fine Eyewear designed by Dorian Smith. The 
 - About Page
 - Contact Page
 - Collections Page
-- 404 and 500 Error Pages
 
 ## Installation
 This website does not require installation as it is able to be run locally.
@@ -36,15 +35,17 @@ This website does not require installation as it is able to be run locally.
 │   │── contact.css
 │   │── global.css
 │   │── index.css
-│   │── 404-500.css
 │── /html
 │   │── about.html
 │   │── collections.html
 │   │── contact.html
+│   │── eyeglasses.html
 │   │── index.html
-│   │── 404.html
-│   │── 500.html
+│   │── schedule.html
+│   │── sunglasses.html
 │── /js
+│   │── collections.js
+│   │── contact.js
 │   │── index.js
 ├── /assets/
 │   └── /images/
