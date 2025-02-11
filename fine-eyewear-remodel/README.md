@@ -28,7 +28,7 @@ This website does not require installation as it is able to be run locally.
 
 ## File Structure
 ```
-/fineEyewear
+/fine-eyewear-remodel
 │── /css
 │   │── about.css
 │   │── collections.css
