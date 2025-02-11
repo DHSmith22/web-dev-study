@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Testing */
+    --border-test: 1px solid red;
+    /* Colors */
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --tertiary-color: #555555;
+    --transparent-background-color: #00000041;
+    --text-color: #000000;
+    --link-hover-color: #555555;
+    /* Text Formating */
+    --font-family-base: 'Playfair Display', Arial, sans-serif;
+    --font-family-heading: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    --font-size-base: 1rem;
+    --font-size-heading: 2rem;
+    --font-size-title: 3rem;
+    --line-height-base: 1.5;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    /* Spacing */
+    --spacing-small: .3rem;
+    --spacing-medium: .5rem;
+    --spacing-large: .7rem;
+    --spacing-xlarge: 1rem;
+    /* padding */
+    --padding-small: 1rem;
+    --padding-medium: 2rem;
+    --padding-large: 4rem;
+    --padding-xlarge: 6rem;
+    /* Borders & Box Shadows */
+    --border-radius: .35rem;
+    --border-width: .5rem;
+    --box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --box-shadow-dark: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Responsive Design Breakpoints */
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1200px;
+    /* Transitions */
+    --transition-fast: 0.2s ease-in-out all;
+    --transition-medium: 0.5s ease-in-out all;
+    --transition-slow: 1s ease-in-out all;
+    /* Z-index */
+    --z-index-background: -10;
+    --z-index-base: 10;
+    --z-index-modal: 1000;
+    --z-index-tooltips: 2000;
+    /* Grid Layouts */
+    --grid-columns: 12;
+    --grid-gap: .5rem;
+    /* Flex */
+    --flex-center: center;
+}

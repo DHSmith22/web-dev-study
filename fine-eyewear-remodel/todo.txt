@@ -1,0 +1,9 @@
+Finish readme overview
+
+make entire website lol
+
+add eyecare page
+javascript cards for individual brand htmls in collections
+continue working on contact page
+
+Work on responsive design after each completed page
