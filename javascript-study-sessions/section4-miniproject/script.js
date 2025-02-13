@@ -14,12 +14,13 @@ let yesButton = document.getElementById('yes');
 let noButton = document.getElementById('no');
 let restartButton = document.getElementById('restart');
 restartButton.style.display = 'none';
+let score = 0;
 
 function loadQuestion() {
     if (currentQuestionIndex < questions.length) {
         questionText.textContent = questions[currentQuestionIndex].question;
     } else {
-        questionText.textContent = "Quiz Complete!";
+        questionText.textContent = `Quiz Complete! You scored ${score}/5`;
         yesButton.style.display = 'none';
         noButton.style.display = 'none';
         restartButton.style.display = 'block';
@@ -29,6 +30,7 @@ function loadQuestion() {
 function checkAnswer(answer) {
     if (questions[currentQuestionIndex].correctAnswer === answer) {
         resultText.textContent = "Correct!"
+        score++;
     } else {
         resultText.textContent = "Incorrect!"
     }
