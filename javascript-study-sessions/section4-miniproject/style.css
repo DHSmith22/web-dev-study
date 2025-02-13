@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Inter:700|Inter:400');
+
+:root {
+    --text: #f3e1eb;
+    --background: #000000;
+    --primary: #ffffff;
+    --secondary: #ff9d6c;
+    --accent: #ff6e2b;
+    --frostedGlass: #c7c7c71f;
+}
+
+body {
+    display: grid;
+    grid-gap: .15rem;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    width: 100vw;
+    height: 100vh;
+    background: var(--background);
+
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.header {
+    grid-column: 4 / 10;
+    grid-row: 2 / 3;
+    border-bottom: 1px solid var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: var(--text);
+}
+.mainContainer {
+    grid-column: 4 / 10;
+    grid-row: 3 / 8;
+    border: 1px solid var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    color: var(--primary);
+    background: var(--frostedGlass);
+}
+.buttons {
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+.buttons button {
+    width: 25%;
+    background-color: var(--accent);
+    color: var(--text);
+    border-radius: .35rem;
+    cursor: pointer;
+}
