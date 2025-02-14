@@ -4,6 +4,7 @@ const questions = [
     {question: "Is Mel Mid a good pick?", correctAnswer: "No"},
     {question: "Garen Flash + R, high skill?", correctAnswer: "Yes"},
     {question: "Do we miss Twisted Treeline?", correctAnswer: "Yes"},
+    {question: "Is LeBlanc a skilled Champion?", correctAnswer: "No"},
 ];
 
 let currentQuestionIndex = 0;
@@ -20,7 +21,7 @@ function loadQuestion() {
     if (currentQuestionIndex < questions.length) {
         questionText.textContent = questions[currentQuestionIndex].question;
     } else {
-        questionText.textContent = `Quiz Complete! You scored ${score}/5`;
+        questionText.textContent = `Quiz Complete! You scored ${score}/${questions.length}`;
         yesButton.style.display = 'none';
         noButton.style.display = 'none';
         restartButton.style.display = 'block';
