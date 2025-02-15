@@ -5,18 +5,17 @@ const questions = [
     {question: "Garen Flash + R, high skill?", correctAnswer: "Yes"},
     {question: "Do we miss Twisted Treeline?", correctAnswer: "Yes"},
     {question: "Is LeBlanc a skilled Champion?", correctAnswer: "No"},
+    {question: "Is Dantes clinically insane", correctAnswer: "Yes"},
 ];
-
 let currentQuestionIndex = 0;
-
 let questionText = document.getElementById('question');
 let resultText = document.getElementById('result');
 let yesButton = document.getElementById('yes');
 let noButton = document.getElementById('no');
 let restartButton = document.getElementById('restart');
+let perfectScore = document.getElementById('perfectScore');
 restartButton.style.display = 'none';
 let score = 0;
-
 function loadQuestion() {
     if (currentQuestionIndex < questions.length) {
         questionText.textContent = questions[currentQuestionIndex].question;
@@ -26,8 +25,13 @@ function loadQuestion() {
         noButton.style.display = 'none';
         restartButton.style.display = 'block';
     }
-}
 
+    if (score === questions.length) {
+        perfectScore.textContent = 'Only cool people see this when they get 100%';
+    } else {
+        perfectScore.textContent = '';
+    }
+}
 function checkAnswer(answer) {
     if (questions[currentQuestionIndex].correctAnswer === answer) {
         resultText.textContent = "Correct!"
@@ -44,5 +48,4 @@ function checkAnswer(answer) {
 yesButton.addEventListener('click', () => checkAnswer("Yes"));
 noButton.addEventListener('click', () => checkAnswer("No"));
 restartButton.addEventListener('click', () => location.reload());
-
 loadQuestion();

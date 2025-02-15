@@ -25,6 +25,3 @@ document.getElementById('rollButton').addEventListener("click", (e) => {
 
     outputH1.innerHTML = diceResults.length > 0 ? diceResults.join(", ") : "Please Select a Die";
 });
-
-
-
