@@ -1,5 +1,4 @@
-
-Web Development Study Repo
+# Web Development Study Repo
 # Table of Contents
 - [Overview](#Overview)
 - [Features](#Features)
