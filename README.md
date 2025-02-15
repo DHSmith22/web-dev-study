@@ -1,5 +1,5 @@
 
-# Fine Eyewear Website Mockup
+Web Development Study Repo
 # Table of Contents
 - [Overview](#Overview)
 - [Features](#Features)
