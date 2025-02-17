@@ -16,7 +16,7 @@ const winConditions = [
     [0, 4, 8], // Diagonal top-left to bottom-right
     [2, 4, 6]  // Diagonal top-right to bottom-left
 ];
-boxes.forEach((box, index) => {
+boxes.forEach((box) => {
     box.addEventListener('click', () => {
         if (!activeGame) return;
         let boxText = box.querySelector('h1');
