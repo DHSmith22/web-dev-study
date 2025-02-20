@@ -1,0 +1,3 @@
+# An app that displays time on Earth CST and Mars!
+
+## My math skills are bad and I didn't do the best research on how to do this so I'm pretty sure the Mars time is very much incorrect...
