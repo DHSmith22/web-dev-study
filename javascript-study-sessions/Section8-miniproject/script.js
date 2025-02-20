@@ -2,7 +2,7 @@ function spaceClocks() {
     const earthTime = new Date().toLocaleTimeString("en-US", {timeZone: 'America/Chicago'});
 
     // Mars Time Calculation
-    const earthUTC = new Date().getTime() / 1000 / 86400 + 2440588; // Julian Date
+    const earthUTC = new Date().getTime() / 1000 / 86400 + 2440587.5; // Julian Date
     const MSD = (earthUTC - 2405522) / 1.027; // Mars Sol Date
     const mtcHours = (MSD % 1) * 24;
     const marsTime = new Date();
